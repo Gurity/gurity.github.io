@@ -1,46 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>BLUECOVER</title>
-    <link rel="stylesheet" href="css/iframe_embed.css" />
-  </head>
-  <body>
-    <div id="header">
-      <div id="header_content">
-        <p id="slogan">Why So Serious?</p>
-        <div id="nav">
-          <div id="nav_tabs">
-            <a href="#" class="nav_tab" id="nav_tab_0">Articles </a
-            ><a href="#" class="nav_tab" id="nav_tab_1">Game </a
-            ><a href="#" class="nav_tab" id="nav_tab_2">RedBlackTree </a
-            ><a href="#" class="nav_tab" id="nav_tab_3">About</a>
-          </div>
-          <div id="nav_underlines"><span id="nav_float_underline"></span></div>
+    <head>
+        <title>BLUECOVER</title>
+        <link rel="stylesheet" href="css/iframe_embed.css" /> 
+    </head>
+    <body>
+        <div id="header">
+            <div id="header_content">
+                <p id="slogan">Why So Serious?</p>
+                <div id="nav">
+                    <div id="nav_tabs">
+                        <a href="#" class="nav_tab" id="nav_tab_0">Articles
+                        </a><a href="#" class="nav_tab" id="nav_tab_1">Game
+                        </a><a href="#" class="nav_tab" id="nav_tab_2">RedBlackTree
+                        </a><a href='#' class="nav_tab" id="nav_tab_3">About</a>
+                    </div>
+                    <div id="nav_underlines">
+                        <span id="nav_float_underline"></span>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
-    <div id="sidebar"></div>
+        <div id="sidebar">
+        </div>
 
-    <div id="article">
-      <iframe
-        id="noteframe"
-        name="noteframe"
-        src="z_algorithm.html"
-        frameborder="0"
-        scrolling="no"
-      >
-      </iframe>
-    </div>
+        <div id="article">
+            <iframe id="noteframe" name="noteframe" src="z_algorithm.html" frameborder="0" scrolling="no">
+            </iframe>
+        </div>
 
-    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="js/frame_height.js"></script>
-    <script type="text/javascript" src="js/tab_click.js"></script>
-    <script type="text/javascript">
-      window.onload = function() {
-        init_tab_click();
-        adjust_iframe_height(document.getElementById("noteframe"));
-      };
-    </script>
-  </body>
+        <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="js/frame_height.js"></script>
+        <script type="text/javascript" src="js/tab_click.js"></script>
+        <script type="text/javascript">
+            window.onload = function () {
+                init_tab_click();
+                adjust_iframe_height(document.getElementById('noteframe'));
+            }
+        </script>
+    </body>
 </html>
